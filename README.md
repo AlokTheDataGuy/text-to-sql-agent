@@ -1,10 +1,9 @@
 # Text-to-SQL Agent
 
-![Text-to-SQL Agent Screenshot](./public/Screenshot.png)
-
-
 ## About
 The Text-to-SQL Agent is an AI-powered tool built with Next.js that allows users to convert natural language queries into SQL commands and directly interact with a database. It utilizes LangChain, LangGraph, and Ollama to generate, execute, and refine SQL queries dynamically. The system can retrieve data from the database, enabling seamless interactions without requiring manual SQL writing.
+
+![Text-to-SQL Agent Screenshot](./public/Screenshot.png)
 
 ## Features
 - **Natural Language to SQL Conversion**: Converts user queries into SQL statements.
