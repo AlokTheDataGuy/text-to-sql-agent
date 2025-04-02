@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Text-to-SQL Agent
 
-## Getting Started
+![Text-to-SQL Agent Screenshot](./public/Screenshot.png)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
+The Text-to-SQL Agent is an AI-powered tool built with Next.js that allows users to convert natural language queries into SQL commands and directly interact with a database. It utilizes LangChain, LangGraph, and Ollama to generate, execute, and refine SQL queries dynamically. The system can retrieve data from the database, enabling seamless interactions without requiring manual SQL writing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- **Natural Language to SQL Conversion**: Converts user queries into SQL statements.
+- **Direct Database Interaction**: Executes generated SQL queries and fetches results.
+- **Multi-Step Query Processing**: Uses LangGraph for structured query generation.
+- **Supports SQLite**: Works with SQLite databases for lightweight and fast execution.
+- **Extensible and Modular**: Easily adaptable for other databases or additional AI capabilities.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
+- **Next.js**: Framework for building the frontend and backend.
+- **LangChain**: For natural language processing and query generation.
+- **LangGraph**: Enables structured decision-making for SQL refinement.
+- **Ollama**: AI-powered model for query understanding.
+- **SQLite**: Lightweight relational database engine.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+### Prerequisites
+- Node.js (Latest LTS version recommended)
+- SQLite installed
+- WatsonX API credentials
 
-To learn more about Next.js, take a look at the following resources:
+### Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/text-to-sql-agent.git
+   cd text-to-sql-agent
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables in a `.env.local` file:
+   ```env
+   WATSONX_AI_ENDPOINT=your_watsonx_endpoint
+   WATSONX_AI_APIKEY=your_watsonx_apikey
+   WATSONX_AI_PROJECT_ID=your_watsonx_project_id
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
+1. Open `http://localhost:3000` in your browser.
+2. Enter a natural language query (e.g., *"Show me all customers who made a purchase last month"*).
+3. The system will generate an SQL query and execute it on the database.
+4. Results will be displayed on the interface.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`.
+3. Commit your changes: `git commit -m "Add new feature"`.
+4. Push to the branch: `git push origin feature-branch-name`.
+5. Open a pull request.
 
-## Deploy on Vercel
+## License
+This project is licensed under the MIT License.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
