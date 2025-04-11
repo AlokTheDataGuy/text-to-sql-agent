@@ -29,7 +29,7 @@ The Text-to-SQL Agent is an AI-powered tool built with Next.js that allows users
 ### Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/text-to-sql-agent.git
+   git clone https://github.com/AlokTheDataGuy/text-to-sql-agent.git
    cd text-to-sql-agent
    ```
 2. Install dependencies:
